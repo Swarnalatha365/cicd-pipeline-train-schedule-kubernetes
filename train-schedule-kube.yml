@@ -8,8 +8,8 @@ spec:
     app: train-schedule
   ports:
   - protocal: TCP
-    port: 8020
-    nodePort: 8020
+    port: 8080
+    nodePort: 8080
     
     
  ---
@@ -34,5 +34,5 @@ spec:
     - name: train-schedule
       image: $DOCKER_IMAGE_NAME:$BUILD_NUMBER
       ports:
-      - containerPort:8020
+      - containerPort:8080
   
